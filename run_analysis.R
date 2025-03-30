@@ -61,12 +61,11 @@ colnames(setWithActivityNames) <- gsub("Mag", "Magnitude", colnames(setWithActiv
 colnames(setWithActivityNames) <- gsub("BodyBody", "Body", colnames(setWithActivityNames))
 
 # 5. Creating a second, independent tidy data set with the avg of each variable for each activity and subject
-tidySet <- setWithActivityNames %>%
+tidyDataSet <- setWithActivityNames %>%
         group_by(subjectID, activityID, activityType) %>%
         summarise_all(mean)
 
 # Writing second tidy data set into a txt file
-write.table(tidySet, "tidySet.txt", row.names = FALSE)
+write.table(tidyDataSet, "tidyDataSet.txt", row.names = FALSE)
 
 
-#original work by github.com/divyam6969
