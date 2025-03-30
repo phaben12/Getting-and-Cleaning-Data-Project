@@ -19,5 +19,5 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 **`Code.Book.md`**
 
-**'tidy_data.txt**
+**'tidy_data.txt`**
 
